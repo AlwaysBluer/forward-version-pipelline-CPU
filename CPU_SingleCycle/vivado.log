@@ -1,0 +1,923 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 21 10:23:30 2021
+# Process ID: 3808
+# Current directory: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7328 C:\Users\Administrator\Desktop\CPU_SingleCycle\CPU_SingleCycle\CPU_SingleCycle.xpr
+# Log file: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'cpuclk' is locked:
+* Current project part 'xc7a100tfgg484-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'cpuclk' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Jul 21 10:23:47 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Jul 21 10:44:46 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/synth_1/runme.log
+[Wed Jul 21 10:44:46 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CTRL_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Ctrl_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Data_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/EXE_MEM_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_MEM_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ID_EXE_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EXE_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IF_ID_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/MEM_WB_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PCsel_selected.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCsel_selected
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Top_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sim_1/new/cpu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/prgrom/sim/prgrom.v:64]
+ERROR: [VRFC 10-2063] Module <dram> not found while processing module instance <U_dram> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/prgrom/sim/prgrom.v:64]
+ERROR: [VRFC 10-2063] Module <dram> not found while processing module instance <U_dram> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/prgrom/sim/prgrom.v:64]
+ERROR: [VRFC 10-2063] Module <dram> not found while processing module instance <U_dram> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp
+add_files -norecurse C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.dcp
+add_files -norecurse C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.dcp
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/prgrom/sim/prgrom.v:64]
+ERROR: [VRFC 10-2063] Module <dram> not found while processing module instance <U_dram> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/prgrom/sim/prgrom.v:64]
+ERROR: [VRFC 10-2063] Module <dram> not found while processing module instance <U_dram> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/prgrom/sim/prgrom.v:64]
+ERROR: [VRFC 10-2063] Module <dram> not found while processing module instance <U_dram> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CTRL_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Ctrl_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Data_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/EXE_MEM_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_MEM_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ID_EXE_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EXE_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IF_ID_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/MEM_WB_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PCsel_selected.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCsel_selected
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Top_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sim_1/new/cpu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/prgrom/sim/prgrom.v:64]
+ERROR: [VRFC 10-2063] Module <dram> not found while processing module instance <U_dram> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp
+add_files -norecurse C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci
+export_ip_user_files -of_objects  [get_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci] -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.dcp
+add_files -norecurse C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci
+export_ip_user_files -of_objects  [get_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci] -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dram'...
+export_ip_user_files -of_objects [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci] -directory C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+export_ip_user_files -of_objects [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci] -directory C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/prgrom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/sim/prgrom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prgrom
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Top_PC
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.prgrom
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.IF_ID_Regs
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.CTRL_Unit
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.ID_EXE_Regs
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCsel_selected
+Compiling module xil_defaultlib.EXE_MEM_Regs
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.MEM_WB_Regs
+Compiling module xil_defaultlib.Ctrl_Hazard_Detector
+Compiling module xil_defaultlib.Data_Hazard_Detector
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 21 11:06:54 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1897.027 ; gain = 6.492
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/prgrom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1900.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/prgrom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/sim/prgrom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prgrom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CTRL_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Ctrl_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Data_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/EXE_MEM_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_MEM_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ID_EXE_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EXE_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IF_ID_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/MEM_WB_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PCsel_selected.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCsel_selected
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Top_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sim_1/new/cpu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Top_PC
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.prgrom
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.IF_ID_Regs
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.CTRL_Unit
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.ID_EXE_Regs
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCsel_selected
+Compiling module xil_defaultlib.EXE_MEM_Regs
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.MEM_WB_Regs
+Compiling module xil_defaultlib.Ctrl_Hazard_Detector
+Compiling module xil_defaultlib.Data_Hazard_Detector
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/prgrom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+run all
+run: Time (s): cpu = 00:00:47 ; elapsed = 00:04:15 . Memory (MB): peak = 1905.555 ; gain = 2.734
+set_property -dict [list CONFIG.coefficient_file {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/inst_ram.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/inst_ram.coe' provided. It will be converted relative to IP Instance files 'inst_ram.coe'
+generate_target all [get_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+catch { config_ip_cache -export [get_ips -all prgrom] }
+export_ip_user_files -of_objects [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci]
+launch_runs -jobs 8 prgrom_synth_1
+[Wed Jul 21 11:14:36 2021] Launched prgrom_synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci] -directory C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/prgrom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/sim/prgrom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prgrom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/CTRL_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Ctrl_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Data_Hazard_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Hazard_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/EXE_MEM_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE_MEM_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ID_EXE_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EXE_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IF_ID_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/ImmGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/MEM_WB_Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/PCsel_selected.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCsel_selected
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/new/Top_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sim_1/new/cpu_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Top_PC
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.prgrom
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.IF_ID_Regs
+Compiling module xil_defaultlib.RF
+Compiling module xil_defaultlib.CTRL_Unit
+Compiling module xil_defaultlib.ImmGenerator
+Compiling module xil_defaultlib.ID_EXE_Regs
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.PCsel_selected
+Compiling module xil_defaultlib.EXE_MEM_Regs
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.MEM_WB_Regs
+Compiling module xil_defaultlib.Ctrl_Hazard_Detector
+Compiling module xil_defaultlib.Data_Hazard_Detector
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+run all
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v: file does not exist.
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1908.980 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/synth_1
+
+reset_run cpuclk_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/cpuclk_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dram'...
+WARNING: [Project 1-577] IP run cpuclk_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/cpuclk/cpuclk.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/cpuclk/cpuclk.xci
+
+WARNING: [Project 1-576] IP 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.srcs/sources_1/ip/cpuclk/cpuclk.xci' in run cpuclk_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Wed Jul 21 11:22:25 2021] Launched cpuclk_synth_1, prgrom_synth_1, dram_synth_1, synth_1...
+Run output will be captured here:
+cpuclk_synth_1: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/cpuclk_synth_1/runme.log
+prgrom_synth_1: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/prgrom_synth_1/runme.log
+dram_synth_1: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/dram_synth_1/runme.log
+synth_1: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/synth_1/runme.log
+[Wed Jul 21 11:22:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/synth_1
+
+reset_run dram_synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci] -no_script -reset -force -quiet
+remove_files  -fileset prgrom C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci
+INFO: [Project 1-386] Moving file 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.xci' from fileset 'prgrom' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci] -no_script -reset -force -quiet
+remove_files  -fileset dram C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci
+INFO: [Project 1-386] Moving file 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.xci' from fileset 'dram' to fileset 'sources_1'.
+add_files -norecurse {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/dram/dram.dcp}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Jul 21 11:28:17 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/synth_1/runme.log
+[Wed Jul 21 11:28:17 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp
+add_files -norecurse C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/prgrom.dcp
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa4775e7da3f48cfa5eda8aa863867d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <dist_mem_gen_v8_0_12> not found while processing module instance <inst> [C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/download_test/synthesized_ip/prgrom/sim/prgrom.v:64]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Jul 21 11:42:43 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/synth_1/runme.log
+[Wed Jul 21 11:42:43 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/CPU_SingleCycle/CPU_SingleCycle/CPU_SingleCycle.runs/impl_1/CPU_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 21 11:48:16 2021...

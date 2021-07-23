@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jul 18 20:31:40 2021
+# Process ID: 19092
+# Current directory: E:/190110717/CPU_SingleCycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22272 E:\190110717\CPU_SingleCycle\CPU_SingleCycle.xpr
+# Log file: E:/190110717/CPU_SingleCycle/vivado.log
+# Journal file: E:/190110717/CPU_SingleCycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/190110717/CPU_SingleCycle/CPU_SingleCycle.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sim_1/new/stupid_test.v w ]
+add_files -fileset sim_1 E:/190110717/CPU_SingleCycle/CPU_SingleCycle.srcs/sim_1/new/stupid_test.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top stupid_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source stupid_test.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cpu_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source cpu_sim.tcl
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top stupid_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_1
+close_sim
+launch_simulation
+source stupid_test.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cpu_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_2
+close_sim
+launch_simulation
+source cpu_sim.tcl
+current_wave_config {Untitled 4}
+add_wave {{/cpu_sim/mycpu/CHD}} 
+current_wave_config {Untitled 4}
+add_wave {{/cpu_sim/mycpu/DHD}} 
+relaunch_sim
+close_sim
+launch_simulation
+source cpu_sim.tcl
+current_wave_config {Untitled 5}
+add_wave {{/cpu_sim/mycpu/CHD}} 
+current_wave_config {Untitled 5}
+add_wave {{/cpu_sim/mycpu/DHD}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/cpu_sim/mycpu/mem_wb_regs/mem_alu_value}} {{/cpu_sim/mycpu/mem_wb_regs/mem_dram_value}} {{/cpu_sim/mycpu/mem_wb_regs/mem_PC}} {{/cpu_sim/mycpu/mem_wb_regs/mem_rd}} {{/cpu_sim/mycpu/mem_wb_regs/mem_Memsel}} {{/cpu_sim/mycpu/mem_wb_regs/mem_RegWE}} {{/cpu_sim/mycpu/mem_wb_regs/mem_WDataSel}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/cpu_sim/mycpu/DHD/if_id_stop}} {{/cpu_sim/mycpu/DHD/id_exe_stop}} {{/cpu_sim/mycpu/DHD/exe_mem_stop}} {{/cpu_sim/mycpu/DHD/mem_wb_stop}} {{/cpu_sim/mycpu/DHD/PC_stop}} {{/cpu_sim/mycpu/DHD/if_id_flush}} {{/cpu_sim/mycpu/DHD/id_exe_flush}} {{/cpu_sim/mycpu/DHD/exe_mem_flush}} {{/cpu_sim/mycpu/DHD/mem_wb_flush}} {{/cpu_sim/mycpu/DHD/rs1_en}} {{/cpu_sim/mycpu/DHD/rs2_en}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/cpu_sim/mycpu/module_alu/PC_out}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/cpu_sim/mycpu/CHD/select_pc}} {{/cpu_sim/mycpu/CHD/if_id_flush}} {{/cpu_sim/mycpu/CHD/id_exe_flush}} {{/cpu_sim/mycpu/CHD/exe_mem_flush}} {{/cpu_sim/mycpu/CHD/mem_wb_flush}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 5}
+add_wave {{/cpu_sim/mycpu/DHD/if_id_stop}} {{/cpu_sim/mycpu/DHD/id_exe_stop}} {{/cpu_sim/mycpu/DHD/exe_mem_stop}} {{/cpu_sim/mycpu/DHD/mem_wb_stop}} {{/cpu_sim/mycpu/DHD/PC_stop}} {{/cpu_sim/mycpu/DHD/if_id_flush}} {{/cpu_sim/mycpu/DHD/id_exe_flush}} {{/cpu_sim/mycpu/DHD/exe_mem_flush}} {{/cpu_sim/mycpu/DHD/mem_wb_flush}} {{/cpu_sim/mycpu/DHD/rs1_en}} {{/cpu_sim/mycpu/DHD/rs2_en}} 
+relaunch_sim
+close_sim
+close_sim

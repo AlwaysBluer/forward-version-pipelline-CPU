@@ -1,0 +1,453 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jul 21 11:44:53 2021
+| Host         : PA11 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_top_control_sets_placed.rpt
+| Design       : CPU_top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   381 |
+| Unused register locations in slices containing registers |  1456 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           23 |
+|      2 |           37 |
+|      3 |           69 |
+|      4 |          168 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |            2 |
+|     15 |            1 |
+|    16+ |           79 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              50 |           35 |
+| No           | No                    | Yes                    |             227 |           76 |
+| No           | Yes                   | No                     |              17 |            5 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1242 |          726 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|            Clock Signal            |                                              Enable Signal                                             |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_Memsel_i_1_n_1                                                                     | mycpu/regfile/rst_n_0                     |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | Display/p_0_in                            |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | Display/p_0_in                            |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_PCsel_reg[0]_0                                                                     | mycpu/regfile/rst_n_0                     |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_Memsel_i_1_n_1                                                                     | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_Memsel_i_1_n_1                                                                     | Display/p_0_in                            |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/AR[0]                       |                1 |              1 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  clk_IBUF                          |                                                                                                        |                                           |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/rst_n                       |                1 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/rst_n                       |                2 |              2 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                1 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/rst_n_1                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/rst_n_1                     |                1 |              3 |
+|  Display/clk_1khz                  |                                                                                                        | mycpu/regfile/AR[0]                       |                1 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/rst_n_1                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       |                                                                                                        | Display/p_0_in                            |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                1 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/rst_n_1                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/rst_n_1                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/rst_n_1                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/rst_n_1                     |                1 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/rst_n_0                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/rst_n_1                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/rst_n_1                     |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/rst_n_1                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                3 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/rst_n_0                     |                2 |              3 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_17[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_14[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_21[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_22[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_12[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/rst_n_1                     |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_19[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_18[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_20[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_10[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/rst_n_1                     |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_1[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_13[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_15[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_4[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_16[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_24[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_29[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_23[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_5[0]                                                                   | mycpu/regfile/rst_n_1                     |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/rst_n_1                     |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_27[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_9[0]                                                                   | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_25[0]                                                                  | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_28[0]                                                                  | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_8[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/rst_n_1                     |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_3[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_26[0]                                                                  | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_2[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_PCsel_reg[0]_0                                                                     | Display/p_0_in                            |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                3 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/E[0]                                                                                 | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_6[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                4 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/pc1/DataReg[31][7]_i_1_n_1  |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/pc1/DataReg[31][18]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                1 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/pc1/DataReg[31][31]_i_2_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/pc1/DataReg[31][27]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/pc1/DataReg[31][15]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_7[0]                                                                   | mycpu/regfile/pc1/DataReg[31][11]_i_1_n_1 |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_0[0]                                                                   | mycpu/regfile/rst_n_1                     |                2 |              4 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_Memsel_i_1_n_1                                                                     | mycpu/regfile/rst_n                       |                2 |              6 |
+|  clk_IBUF                          |                                                                                                        | Display/p_0_in                            |                1 |              7 |
+|  Display/clk_1khz                  |                                                                                                        | Display/p_0_in                            |                1 |              8 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_PCsel_reg[0]_0                                                                     | mycpu/regfile/rst_n_1                     |                2 |              8 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_PCsel_reg[1]_0                                                                     | mycpu/id_ex_regs/rst_n                    |                5 |             15 |
+|  mycpu/if_id_regs/if_inst_reg[5]_0 |                                                                                                        |                                           |                5 |             16 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_Memsel_i_1_n_1                                                                     | mycpu/ex_mem_regs/rst_n                   |                8 |             17 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_PCsel_reg[1]_0                                                                     | mycpu/ex_mem_regs/rst_n                   |               10 |             17 |
+|  clk_IBUF                          |                                                                                                        | Display/clk_1khz_0                        |                5 |             17 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_PCsel_reg[0]_0                                                                     | mycpu/regfile/AR[0]                       |                9 |             28 |
+|  cpuclk_BUFG                       |                                                                                                        | mycpu/regfile/rst_n_0                     |                9 |             29 |
+|  cpuclk_BUFG                       |                                                                                                        | mycpu/id_ex_regs/rst_n                    |                9 |             30 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_PCsel_reg[0]_0                                                                     | mycpu/id_ex_regs/rst_n_0[0]               |                8 |             32 |
+|  cpuclk_BUFG                       | mycpu/mem_wb_regs/mem_RegWE_reg_11[0]                                                                  | mycpu/regfile/AR[0]                       |                7 |             32 |
+|  n_0_1372_BUFG                     |                                                                                                        |                                           |               28 |             32 |
+|  cpuclk_BUFG                       |                                                                                                        | mycpu/regfile/AR[0]                       |               18 |             34 |
+|  cpuclk_BUFG                       |                                                                                                        | mycpu/regfile/rst_n                       |               12 |             49 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_Memsel_i_1_n_1                                                                     | mycpu/id_ex_regs/rst_n                    |               23 |             53 |
+|  cpuclk_BUFG                       |                                                                                                        | mycpu/ex_mem_regs/rst_n                   |               23 |             64 |
+|  cpuclk_BUFG                       | mycpu/id_ex_regs/id_Memsel_i_1_n_1                                                                     | mycpu/id_ex_regs/rst_n_0[0]               |               30 |             66 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7424_7679_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9728_9983_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7168_7423_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6912_7167_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9472_9727_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9216_9471_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6656_6911_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8960_9215_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8704_8959_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6400_6655_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1024_1279_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_0_0_i_1_n_0       |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14080_14335_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6144_6399_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13824_14079_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13312_13567_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13568_13823_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_0_0_i_1_n_0    |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5632_5887_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5888_6143_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8192_8447_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5376_5631_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13056_13311_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12800_13055_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_0_0_i_1_n_0     |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1280_1535_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11008_11263_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8448_8703_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9984_10239_0_0_i_1_n_0  |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7936_8191_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10752_11007_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12288_12543_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12544_12799_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11520_11775_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12032_12287_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10496_10751_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14336_14591_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14592_14847_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14848_15103_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15104_15359_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15360_15615_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15616_15871_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1536_1791_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10240_10495_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15872_16127_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2048_2303_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1792_2047_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2560_2815_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2304_2559_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2816_3071_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_0_0_i_1_n_0     |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3072_3327_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3328_3583_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16128_16383_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3584_3839_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4096_4351_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4352_4607_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4864_5119_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4608_4863_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5120_5375_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11776_12031_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11264_11519_0_0_i_1_n_0 |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7680_7935_0_0_i_1_n_0   |                                           |               32 |            128 |
+|  cpuclk_BUFG                       | mycpu/dram/U_dram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3840_4095_0_0_i_1_n_0   |                                           |               32 |            128 |
++------------------------------------+--------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+
+
